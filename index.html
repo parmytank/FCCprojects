@@ -9,6 +9,34 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".project").addClass("img-rounded col-xs-5");
+  $(".project:odd").addClass("right");
+  $(".project:even").addClass("left");
+});
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > $(".opener").offset().top) {
+    $(".navbar").css("opacity", "0.50");
+    $(".navbar").mouseover(function() {
+      $(".navbar").css("opacity", "1.0");
+    });
+    $(".navbar").mouseout(function() {
+      $(".navbar").css("opacity", "0.5");
+    });
+  } else {
+    $(".navbar").css("opacity", "1.0");
+  }
+});
+
+$(".navbutton").mouseover(function(){
+  $(this).addClass("highlight");
+});
+$(".navbutton").mouseout(function(){
+  $(this).removeClass("highlight");
+});
+</script>
 <style type="text/css">
   body {
   background-color:#2B2B2B;
@@ -116,34 +144,6 @@ h1 {
   border-bottom : 1px dashed white;
 }
 </style>
-<script type="text/javascript">
-$(document).ready(function() {
-  $(".project").addClass("img-rounded col-xs-5");
-  $(".project:odd").addClass("right");
-  $(".project:even").addClass("left");
-});
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > $(".opener").offset().top) {
-    $(".navbar").css("opacity", "0.50");
-    $(".navbar").mouseover(function() {
-      $(".navbar").css("opacity", "1.0");
-    });
-    $(".navbar").mouseout(function() {
-      $(".navbar").css("opacity", "0.5");
-    });
-  } else {
-    $(".navbar").css("opacity", "1.0");
-  }
-});
-
-$(".navbutton").mouseover(function(){
-  $(this).addClass("highlight");
-});
-$(".navbutton").mouseout(function(){
-  $(this).removeClass("highlight");
-});
-</script>
 <html>
   <body>
   <div class="navbar container" align="center" id="navbar">
