@@ -106,6 +106,34 @@ h1 {
   border-bottom : 1px dashed white;
 }
 </style>
+<script type="text/javascript">
+$(document).ready(function() {
+  $(".project").addClass("img-rounded col-xs-5");
+  $(".project:odd").addClass("right");
+  $(".project:even").addClass("left");
+});
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > $(".opener").offset().top) {
+    $(".navbar").css("opacity", "0.50");
+    $(".navbar").mouseover(function() {
+      $(".navbar").css("opacity", "1.0");
+    });
+    $(".navbar").mouseout(function() {
+      $(".navbar").css("opacity", "0.5");
+    });
+  } else {
+    $(".navbar").css("opacity", "1.0");
+  }
+});
+
+$(".navbutton").mouseover(function(){
+  $(this).addClass("highlight");
+});
+$(".navbutton").mouseout(function(){
+  $(this).removeClass("highlight");
+});
+</script>
 <html>
   <body>
   <div class="navbar container" align="center" id="navbar">
