@@ -16,6 +16,10 @@ $(document).ready(function() {
   $(".project:even").addClass("left");
 });
 
+$("#project1").click(function(){
+  alert( "Handler for .click() called." );
+})
+
 $(window).scroll(function() {
   if ($(window).scrollTop() > $(".opener").offset().top) {
     $(".navbar").css("opacity", "0.50");
