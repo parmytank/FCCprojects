@@ -47,13 +47,15 @@ h2 {
   font-size: 2vw;
 }
 h3 {
-  color:black;
-  background-color:white;
-  opacity:0.5;
+  width:100%;
+  z-index:3;
+  opacity:1;
+  color: black;
+  
 }
 .opener {
   margin-top: 30px;
-  padding-top:50px;
+  padding-top:0px;
   display:inline-block;
   background-size: 100%;
   width: 100%;
@@ -107,6 +109,8 @@ h3 {
   z-index:2;
   left:0;
   top:0;
+  opacity:0.8;
+  background-color:white;
 }
 .right {
   float: right;
@@ -129,8 +133,6 @@ h3 {
   flex-direction: column;
   padding-left:10px;
 }
-.social {
-}
 .contactlinks {
   display: inline-block;
 }
@@ -149,6 +151,7 @@ h3 {
   width:100%;
   position:absolute;
   z-index:1;
+  opacity:1;
   left:0;
   top:0;
   overflow:hidden;
@@ -175,7 +178,7 @@ h3 {
 <div style="background-image: url(https://s31.postimg.org/puyibeoaj/Fitz_Roy.jpg)" class="opener container" id="opener">
   <div class="intro">
     <h1>Welcome, my name is Peter</h1>
-    <h2>I am a Philadelphia-based engineer teaching myself web design</h2>
+    <h2>I am an engineer living in Philadelphia and teaching myself full-stack web development</h2>
   </div>
 </div>
 <a name="portfolio">&nbsp;</a>
@@ -185,6 +188,7 @@ h3 {
     <div class="project" id="project1">
       <iframe class="preview" scrolling="no" src="https://parmytank.github.io/pomodoro"></iframe>
       <a href="https://parmytank.github.io/pomodoro" class="project-link"><h3>Pomodoro Clock</h3></a>
+      
     </div>
     <div class="project" id="project2">
       <iframe class="preview" scrolling="no" src="https://parmytank.github.io/calculator/"></iframe>
@@ -197,7 +201,8 @@ h3 {
       <a href="https://parmytank.github.io/wikiviewer/" class="project-link"><h3>Wiki Viewer</h3></a>
     </div>
     <div class="project" id="project4">
-      <iframe class="preview" scrolling="no" src="http://codepen.io/parmytank/full/LZbpQj/"></iframe>
+      <iframe class="preview" scrolling="no" src="https://floating-headland-24202.herokuapp.com/"></iframe>
+      <a href="https://floating-headland-24202.herokuapp.com/" class="project-link"><h3>URL Shortener</h3></a>
     </div>
   </div>
   <a name="contact">&nbsp;</a>
